@@ -6,5 +6,9 @@ phases:
       php: 7.3
   build:
     commands:
-      - php test.php
       - cd /usr/local/bin && ls -R
+      - php --version
+      - python --version
+      - python3 --version
+      - php test.php
+      - python test.py
