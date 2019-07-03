@@ -6,8 +6,8 @@ phases:
       php: 7.3
   build:
     commands:
-      - pwd
       - cd /usr/local/bin && ls -R
+      - cd $CODEBUILD_SRC_DIR
       - php --version
       - python --version
       - python3 --version
