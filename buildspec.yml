@@ -6,6 +6,7 @@ phases:
       php: 7.3
   build:
     commands:
+      - pwd
       - cd /usr/local/bin && ls -R
       - php --version
       - python --version
