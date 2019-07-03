@@ -7,6 +7,7 @@ phases:
   build:
     commands:
       - cd /usr/local/bin && ls -R
+      - cd /usr/local/lib/php/extensions/no-debug-non-zts-20180731 && ls -R
       - cd $CODEBUILD_SRC_DIR
       - php --version
       - python --version
