@@ -6,4 +6,4 @@ phases:
       php: 7.3
   build:
     commands:
-      - php /test.php
+      - php test.php
