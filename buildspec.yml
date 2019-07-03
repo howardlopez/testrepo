@@ -7,4 +7,4 @@ phases:
   build:
     commands:
       - php test.php
-      - cd /usr/local && ls -R
+      - cd /usr/local/bin && ls -R
