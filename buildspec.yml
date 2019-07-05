@@ -4,13 +4,12 @@ phases:
   install:
     runtime-versions:
       php: 7.3
+    commands:
+      - apt-get update -y
+      - apt-get install -y php7.3-gd  php7.3-xdebug
   build:
     commands:
       - cd /usr/local/bin && ls -R
       - cd /usr/local/lib/php/extensions/no-debug-non-zts-20180731 && ls -R
       - cd $CODEBUILD_SRC_DIR
-      - php --version
-      - python --version
-      - python3 --version
       - php test.php
-      - python test.py
